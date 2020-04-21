@@ -137,12 +137,12 @@ h10->GetXaxis()->SetTitle("Number of Global Muons");
 h10->GetYaxis()->SetTitle("Number of Events");
 
 // global muon momentum
-h1 = fs->make<TH1D>("GMmomentum", "GM_Momentum", 240, 0., 120.);
+h1 = fs->make<TH1D>("GMmomentum", "GM_Momentum", 480, 0., 120.);
 h1->GetXaxis()->SetTitle("Global Muon Momentum (in GeV/c)");
 h1->GetYaxis()->SetTitle("Number of Events");
 
 // global muon Transverse_momentum
-h2 = fs->make<TH1D>("GM_Transverse_momentum", "TransverseMomentum", 240, 0., 120.);
+h2 = fs->make<TH1D>("GM_Transverse_momentum", "TransverseMomentum", 480, 0., 120.);
 h2->GetXaxis()->SetTitle("Transverse Momentum of global muons (in GeV/c)");
 h2->GetYaxis()->SetTitle("Number of Events");
 
@@ -162,7 +162,7 @@ h5->GetXaxis()->SetTitle("Invariant Mass for Nmuon>=2 (in GeV/c^2)");
 h5->GetYaxis()->SetTitle("Number of Events");
 
 // dimuon mass spectrum up to 120 GeV (high mass range: upsilon, Z)
-h6 = fs->make<TH1D>("GMmass_extended" , "GMmass" , 240, 0. , 120. );
+h6 = fs->make<TH1D>("GMmass_extended" , "GMmass" , 12000, 0. , 120. );
 h6->GetXaxis()->SetTitle("Invariant Mass for Nmuon>=2 (in GeV/c^2)");
 h6->GetYaxis()->SetTitle("Number of Events");
 
